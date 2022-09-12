@@ -1,0 +1,239 @@
+
+header{
+    background-color: #E1DFE4;
+}
+.principal{
+    width: 100%;
+    height: 789px;
+    background-image: url(../img/foto.png);
+    background-repeat: no-repeat;
+}
+
+.principal img{
+    width: 1100px;
+    height: 360px;   
+}
+
+.principal h1{
+    color:#4DB9BA ;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 15%;
+    font-family: 'Comfortaa', cursive;
+}
+.principal h2{
+    font-size: 50px;
+    font-family: 'Comfortaa', cursive;
+    
+    
+}
+
+
+
+.principal .textName{
+    margin-left: 38%;
+    margin-top: -5%;
+}
+#Perfil{
+    background-color: #d3d8d8;
+    height: 400%;
+    
+}
+#Perfil .cuadroPerfil{
+    width: 90%;
+    height: 200px;
+    background-color: #B2BEBF;
+    text-align: center;
+    margin-left: 58px;
+    margin-bottom: 30px;
+    margin-top: 50px;    
+    position: relative;
+    
+}
+#Perfil h2{
+    text-align: center;
+    color: #4DB9BA;
+    padding-top: 10px;
+    font-family: 'Comfortaa', cursive;
+
+}
+#Perfil .textperfil{
+    margin-top: 46px;
+    font-family: 'Comfortaa', cursive;
+}
+#Perfil .imgpuntos{
+    padding: 20px 512px;
+}
+#Estudios{
+    background-color:rgba(224, 204, 204, 0.7);
+    height: 500px;
+ 
+}
+#Estudios h2{
+    text-align: center;
+    color: #4DB9BA;
+    padding-top:10px ;
+    font-family: 'Comfortaa', cursive; 
+}
+#Estudios .cuadroestudios{
+      width: 100%;
+}
+#Estudios .cuadro1{
+    background-color: #E0CCCC;
+    opacity: 96%;
+    width: 400px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 65px;
+    padding-top: 50px;
+}
+#Estudios .cuadro1 img{
+    width:60px ;
+    height:75px ;
+}
+#Estudios h5{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Comfortaa', cursive;
+}
+#Estudios p{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+#Experiencia{
+    background-color: #d3d8d8;
+    height: 650px;
+}
+#Experiencia h2{
+    text-align: center;
+    color: #4DB9BA; 
+    padding-top: 30px;
+    font-family: 'Comfortaa', cursive;
+}
+#Experiencia .cuadro2{
+    background-color: #B2BEBF;
+    width: 96%;
+    height: 399px;
+    margin-top: 50px;
+    margin-left: 9px;
+    padding-top: 47px;
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Comfortaa', cursive;
+}
+#Experiencia .cuadro3{
+    background-color: #B2BEBF;
+    width: 96%;
+    height: 399px;
+    margin-top: 140px;
+    margin-left: 9px;
+    padding-top: 80px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+}
+.contacto{
+    height: 484px;   
+    background-color:rgba(216, 204, 204, 0.79);
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.contacto h2{
+      color: #4DB9BA; 
+      margin-left: 128px;
+      padding-top: 10px;
+      font-family: 'Comfortaa', cursive;
+    
+}
+.contacto .form-control{
+    background-color: #E0CCCC;
+    width: 440px;
+    border-radius:15px;
+    margin-top: auto;
+    
+
+} 
+.contacto .button{
+    width: 18%;
+    margin-left: 165px;
+    margin-top: 24px;
+    background-color:rgba(210, 199, 199, 107.90);
+    border-radius: 28px;
+    border: transparent;
+}
+.contacto p{
+    font-family: 'Comfortaa', cursive;
+}
+/*Pseudoelementos, empezamos por agregar a propiedad possition:relative al contenedor padre*/
+#Experiencia{
+    position: relative;
+}
+/*Al selector padre le agrgamos ::after*/
+#Experiencia::after{
+        /*El Pseudoelemento siempre debe tener una position absolute absoluta con content"", dimensiones, fondo, posiciones*/
+        position:absolute;
+        content: "";
+        width: 450px;
+        height: 100px;
+        background:url(../img/Exp1.png) no-repeat;
+        top: 0%;
+        left: 820px;
+        z-index:9999;
+        
+}
+#Experiencia::before{
+    /*El Pseudoelemento siempre debe tener una position absolute absoluta con content"", dimensiones, fondo, posiciones*/
+    position:absolute;
+    content: "";
+    width: 450px;
+    height: 100px;
+    background:url(../img/Exp2.png) no-repeat;
+    top: 0%;
+    left: 50px;
+    z-index:9999;
+    
+}
+#Experiencia .cuadro3::after{
+    /*El Pseudoelemento siempre debe tener una position absolute absoluta con content"", dimensiones, fondo, posiciones*/
+    position:absolute;
+    content: "";
+    width: 450px;
+    height: 600px;
+    background:url(../img/libro.png) no-repeat;
+    top: -16%;
+    left: 335px;
+    z-index:999999;
+    
+}
+#Experiencia .cuadro3::before{
+    /*El Pseudoelemento siempre debe tener una position absolute absoluta con content"", dimensiones, fondo, posiciones*/
+    position:absolute;
+    content: "";
+    width: 450px;
+    height: 600px;
+    background:url(../img/libro.png) no-repeat;
+    top: -16%;
+    right: 2px;
+    z-index:999999;
+    
+}
+#Perfil .cuadroPerfil::after{
+    /*El Pseudoelemento siempre debe tener una position absolute absoluta con content"", dimensiones, fondo, posiciones  */
+    position:absolute;
+    content: "";
+    width: 450px;
+    height: 600px;
+    background:url(../img/florperfil.png) no-repeat;
+    top: -18%;
+    left: 1050px;
+    z-index:9999;
+ 
+}
+#whatsapp{
+    position: fixed;
+    right: 20px;
+    top: 90px;
+    z-index: 9999;
+}
